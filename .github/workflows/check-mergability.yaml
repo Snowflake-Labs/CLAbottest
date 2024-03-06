@@ -6,4 +6,6 @@ on:
   
 jobs:
   check-mergability:
+    permissions:
+      statuses: write
     uses: SFC-GH-TestOrg/CLAbot/.github/workflows/check-mergability.yml@main
