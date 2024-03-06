@@ -5,5 +5,5 @@ on:
     types: [created, edited]
   
 jobs:
-  create-comment:
+  check-mergability:
     uses: SFC-GH-TestOrg/CLAbot/.github/workflows/check-mergability.yml@main
