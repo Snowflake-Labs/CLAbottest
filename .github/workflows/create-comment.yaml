@@ -1,0 +1,19 @@
+name: Create comment workflow
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+    branches:
+      - main
+  
+jobs:
+  create-comment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout_CLAbot_repo
+      uses: actions/checkout@v4
+      with:
+        repository: SFC-GH-TestOrg/CLAbot
+        ref: main
+    - name: call-workflow
+      uses: SFC-GH-TestOrg/CLAbot/.github/workflows/clabot-workflow.yml@main
