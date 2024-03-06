@@ -8,4 +8,7 @@ on:
   
 jobs:
   create-comment:
+    permissions:
+      checks: write
+      pull-requests: write
     uses: SFC-GH-TestOrg/CLAbot/.github/workflows/clabot-workflow.yml@main
