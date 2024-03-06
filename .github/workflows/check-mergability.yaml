@@ -1,0 +1,9 @@
+name: Check mergability
+
+on:
+  issue_comment:
+    types: [created, edited]
+  
+jobs:
+  create-comment:
+    uses: SFC-GH-TestOrg/CLAbot/.github/workflows/check-mergability.yml@main
