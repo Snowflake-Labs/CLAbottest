@@ -9,3 +9,4 @@ jobs:
     permissions:
       contents: write
     uses: SFC-GH-TestOrg/CLAbot/.github/workflows/check-mergability.yml@main
+    secrets: ${{ secrets.CLABOT }}
